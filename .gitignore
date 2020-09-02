@@ -1,0 +1,6 @@
+*.egg-info
+tags
+**/.ipynb_checkpoints
+**/results
+**/outputs
+**/__pycache__
