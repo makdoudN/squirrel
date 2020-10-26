@@ -36,7 +36,6 @@ class Recorder:
         # Add Dictionnary {'str': Class}
         # and at each log -> trigger all external tracker with {params} -> tracker
 
-
         # We open the csv because it should be used continually during
         # the training for logging results in constrast to configuration (and potentially other file).
         # `atexit` library is an helper to register callback not to forget to close the file at the
@@ -113,8 +112,6 @@ class Recorder:
         with open(os.path.join(self.output_dir, self.output_res_fname), "r") as f:
             df = pd.read_csv(f, delimiter=self.csv_delimiter)
         if "_time" in df:
-            df["_time"] = pd.to_datetime(df['_time'], format="%d, %H, %M, %S")
+            df["_time"] = pd.to_datetime(df["_time"], format="%d, %H, %M, %S")
             df["_elapsed_time"] = df["_time"] - df["_time"][0]
         return df
-
-
