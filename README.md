@@ -1,4 +1,4 @@
-https://socialify.git.ci/makdoudN/squirrel/image?description=1&descriptionEditable=&font=KoHo&forks=1&logo=https%3A%2F%2Fwww.flaticon.com%2Fsvg%2Fstatic%2Ficons%2Fsvg%2F185%2F185724.svg&owner=1&pattern=Diagonal%20Stripes&stargazers=1&theme=Light
+![squirrel](https://socialify.git.ci/makdoudN/squirrel/image?description=1&descriptionEditable=&font=KoHo&logo=https%3A%2F%2Fwww.flaticon.com%2Fsvg%2Fstatic%2Ficons%2Fsvg%2F185%2F185724.svg&owner=1&pattern=Diagonal%20Stripes&stargazers=1&theme=Light)
 
 A simple yet efficient monitoring tools for ML Application.
 
