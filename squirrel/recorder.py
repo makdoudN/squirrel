@@ -52,7 +52,7 @@ class Recorder:
         )
 
     def save_conf(self, conf: dict, cache=True):
-        """ Save the configuration file.
+        """Save the configuration file.
 
         We optionally cache the configuration to allow certain operations.
         For example, we provide a 'make_report' function that mix the results with
