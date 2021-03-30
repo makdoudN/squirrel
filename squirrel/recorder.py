@@ -31,11 +31,6 @@ class Recorder:
         self.outpute_config_fname = outpute_config_fname
         if not os.path.isdir(self.output_dir):
             os.makedirs(self.output_dir)
-
-        # TODO Add external tracker
-        # Add Dictionnary {'str': Class}
-        # and at each log -> trigger all external tracker with {params} -> tracker
-
         # We open the csv because it should be used continually during
         # the training for logging results in constrast to configuration (and potentially other file).
         # `atexit` library is an helper to register callback not to forget to close the file at the
@@ -45,7 +40,6 @@ class Recorder:
         )
         atexit.register(self.output_res_file.close)
         self.csv_writer = None
-
         self.start_time = datetime.datetime.now()
         self.start_time_fmt = datetime.datetime.strftime(
             self.start_time, "%d, %H, %M, %S"
