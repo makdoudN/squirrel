@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 
-setup(name='squirrel',
+setup(name='mlrec',
       author='nizam makdoud',
       author_email="nizam.makdoud@gmail.com",
       version='0.0.0',
