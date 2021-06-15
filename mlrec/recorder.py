@@ -85,4 +85,5 @@ class Recorder:
         if self.tb_use:
             iters = kwargs['_count']
             for k, v in kwargs.items():
-                self.tb_writer.add_scalar(k, v, iters)
+                if not k[0] in ['_']:
+                    self.tb_writer.add_scalar(k, v, iters)
